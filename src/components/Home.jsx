@@ -103,7 +103,7 @@ export default function Home() {
               style={{ width: '400px' }}
               variants={imageVariant}
               initial="hidden"
-              animate={control}
+              animate={control} 
             />
           </Col>
         </Row>
