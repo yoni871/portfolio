@@ -1,38 +1,281 @@
-.App {
-  text-align: center;
+.navbar {
+    background: -webkit-linear-gradient(to right, #141823, #0f121a, #0f121a, #0f121a);
+    background: linear-gradient(to right, #000000, #2e2f35, #6b6c72, #1a1f2d);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.align-top {
+    background-color:rgb(37, 90, 72);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.align-top:hover{
+    background-color:rgb(239, 239, 198);;
+    transition: background-color 0.3s ease;
+}
+
+.ms-auto .navbarlink{
+    text-shadow: 10px 10px 10px rgb(1, 9, 27);
+}
+
+.ms-auto .navbarlink:not(:last-child) {
+    margin-right: 20px;
   }
+
+
+.ms-auto .navbarlink:hover {
+    font-size: larger;
+    font-weight: 700;
+    transition: border-bottom 0.3s ease;  
+    box-sizing: border-box;
+    color: white;   
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.ms-auto .resume-link {
+    border: 2px solid rgb(31, 76, 61);
+    background-color: rgb(31, 76, 61);
+    box-shadow: 10px 10px 10px rgb(1, 9, 27);
+    border-radius: 10%;
+
 }
 
-.App-link {
-  color: #61dafb;
+/* navbar styling ends here */
+
+.home {
+    /* margin: 75px; */
+    padding: 100px;
+}
+.home-img img{
+    border-radius: 50%;
+    
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.button-home:hover {
+    transform: translateY(-10px);
+}
+
+.header {
+    background: -webkit-linear-gradient(to right, #141823, #0f121a, #0f121a, #0f121a);
+    background: linear-gradient(to right, #000000, #2e2f35, #6b6c72, #1a1f2d);
+}
+
+
+.align-items-center h1{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:rgb(239, 239, 198);
+}
+
+.align-items-center h1 strong {
+    color: #255a48;
+    font-size: 55px;
+    text-shadow: 10px 10px 10px rgb(8, 8, 1);
+   
+}
+
+.align-items-center p{
+    color:rgb(244, 244, 221);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* about styling starts below */
+
+.about {
+    background: -webkit-linear-gradient(to right, #203c2f, #0f121a, #0f121a, #0f121a);
+    background: linear-gradient(to right, #1d382d, #2e2f35, #2a4434, #1a1f2d);
+}
+
+.aboutme-parag {
+    padding: 50px;
+}
+
+.aboutme-parag h1{
+    text-align: center !important;
+    color: rgb(236, 229, 229);
+    font-size: 80px;   
+    text-shadow: 10px 10px 10px rgb(8, 8, 1); 
+}
+
+.about-img {
+    max-width: 100%;
+    height: auto; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+}
+
+.about-img:hover{
+    transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.about-img:nth-child(1) {
+    transform: rotate(-20deg);
   }
-  to {
-    transform: rotate(360deg);
+
+.about-img:nth-child(2) {
+    transform: rotate(20deg);
   }
+
+.info-about h4 {
+    color: #000000;
 }
+
+.info-about p {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #f2f3f0;
+}
+
+/* skills syling starts here */
+
+.custom-card {
+    width: 100%;
+    margin: 20px;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    opacity: 0.3;
+    transform: scale(0.7); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+.custom-card.active:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px #00431a;
+}
+
+.custom-card.active {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+
+.carousel-control-prev, .carousel-control-next {
+    cursor: pointer;
+    font-size: 2rem;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.carousel-control-prev {
+    position: absolute;
+    left: 0;
+}
+
+.carousel-control-next {
+    position: absolute;
+    right: 0;
+}
+
+.custom-card-img {
+    width: 100%;
+    height: 300px; 
+    object-fit:cover;
+  }
+
+.carousel-container{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background: -webkit-linear-gradient(to right, #203c2f, #0f121a, #0f121a, #0f121a);
+    background: linear-gradient(to right, #1d382d, #2e2f35, #2e2f35, #1d382d);
+}
+
+
+.skills-h1 {
+    color:bisque;
+    text-shadow: 10px 10px 10px rgb(1, 9, 27);
+    margin: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.skills-nav {
+    margin: 50px;
+    border-style:hidden;
+    background: -webkit-linear-gradient(to right, #203c2f, #0f121a, #0f121a, #0f121a);
+    background: linear-gradient(to right, #1d382d, #2e2f35, #2a4434, #1a1f2d);
+
+}
+.skills-icon {
+    margin: 20px auto;
+    display: inline-block;
+    width: 500px;
+}
+
+.skills-p {
+    color: #b5c39e;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.skills-p:hover {
+    color:rgb(236, 229, 229);
+}
+
+.icon-h1 {
+    color: rgb(212, 188, 156);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+.skills-title h1{
+    margin: 50px;
+    text-align: center !important;
+    color: rgb(236, 229, 229);
+    font-size: 80px;   
+    text-shadow: 10px 10px 10px rgb(8, 8, 1); 
+}
+
+/* Contacts styling begins */
+
+.contacts {
+    background-color: transparent;
+    padding: 30px;
+    margin-top: 30px;
+    font-family:'Times New Roman', Times, serif;
+    box-shadow: 10px 10px 10px rgb(27, 27, 27);   
+}
+
+.form-group input::placeholder {
+    color: #c6c7ca;
+}
+
+.contact_form textarea::placeholder {
+    color: #c6c7ca;
+}
+
+.contact_form textarea:focus {
+    background-color: #14261f;
+}
+.form-group input:focus {
+    background-color: #14261f;
+}
+
+.form-control {
+    color: white !important;
+}
+
+.contact_form .form-control {
+    padding: 1.375rem .75rem;
+    line-height: 1.5;
+    background-color: transparent;
+    border-radius: 0 !important;
+    border: 1px solid #fff;
+}
+
+.ac_btn {
+    border: 2px solid rgb(6, 14, 11);
+    background-color: rgb(13, 31, 26) !important;
+    border-radius: 5%;
+    box-shadow: 0px 0px 10px rgb(1, 9, 27);
+}
+
+.ac_btn:hover {
+    background-color: #244d3d !important;
+}
+
+  
+
+
+
+
+
+
+
+
+
+  
